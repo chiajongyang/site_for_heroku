@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 {% block title %} Hello, world {% endblock %}
-{% block headmessage %} Hello, {{name}} {% endblock %}
+{% block headmessage %} heroku太難了, {{name}} {% endblock %}
 {% block main %}
   <hr>
-      特別號：{{special}}<br>
-      樂透號碼：{{ lotto }}<br>
+      幸運數字：{{special}}<br>
+      倒楣號碼：{{ lotto }}<br>
       {% autoescape off %}
       {{ plot_div }}
       {% endautoescape %}
